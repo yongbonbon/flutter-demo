@@ -1,25 +1,28 @@
 import 'package:flutter/material.dart';
 import 'MyIcon.dart';
-
+import 'MyList.dart';
+import 'Horzvail.dart';
+import 'DynamicList.dart';
 
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primarySwatch: Colors.yellow),
     home: Scaffold(
       appBar: AppBar(title: const Text('Hello world')),
-      body: Column(children: const [
-        // myApp(),
-        // myButton(),
-        // ImageComponent(),
-        // SizedBox(height: 20),
-        // Circular(),
-        // SizedBox(height: 20),
-        // ClipImage(),
-        // SizedBox(height: 20),
-        // LocalImage(),
-        MyIcon(),
-
-      ]),
+      body: DynamicList(),
+      //  Column(children: const [
+      //   // myApp(),
+      //   // myButton(),
+      //   // ImageComponent(),
+      //   // SizedBox(height: 20),
+      //   // Circular(),
+      //   // SizedBox(height: 20),
+      //   // ClipImage(),
+      //   // SizedBox(height: 20),
+      //   // LocalImage(),
+      //   // MyIcon(),
+      // ]
+      // ),
     ),
   ));
 }
